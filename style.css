@@ -1,42 +1,92 @@
-.container {
-    width: 300px;
-    margin: 100px auto; /* Centering horizontally */
-    padding: 20px;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-form input {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #1a252f;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;  /* Full screen ke center pe lane ke liye */
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1e3a52;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+/* Login Box */
 .login-box {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Fix width */
+    width: 320px;
     text-align: center;
+    margin-top: 20px;
 }
 
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e3a52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #142838;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a52;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
