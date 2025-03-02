@@ -24,3 +24,19 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;  /* Full screen ke center pe lane ke liye */
+}
+
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fix width */
+    text-align: center;
+}
+
