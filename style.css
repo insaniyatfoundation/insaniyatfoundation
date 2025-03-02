@@ -1,156 +1,91 @@
-/* General Styles */
 body {
+    background-color: #1a1a1a;
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0077b6;
-    padding: 15px 20px;
     color: white;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-container img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.logo-text {
-    font-size: 24px;
+.hero-section {
+    position: relative;
+    text-align: center;
+    padding: 80px 20px;
+    background: url('Images/hand\ shake\ logo.png') no-repeat center center/cover;
+    color: white;
     font-weight: bold;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
 
-.nav-links li {
-    margin: 0 10px;
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.logo {
+    max-width: 60px;
 }
 
-/* Mobile Menu */
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-}
-
-/* Hero Section */
-.hero {
-    background: url('Images/hero.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
+.footer {
     text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
 }
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.section-box {
+    background: #333;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.poor-people-section {
+    background: #550000;
+    position: relative;
+    padding: 60px 20px;
+    color: white;
 }
 
-.btn {
-    background: #ff5733;
+.poor-people-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Images/hand\ shake\ logo.png') no-repeat center center/cover;
+    opacity: 0.3;
+}
+
+.poor-people-content {
+    position: relative;
+    z-index: 1;
+}
+
+.events-section {
+    background: #112233;
+}
+
+.donate-btn {
+    background: #ff3333;
     color: white;
     padding: 10px 20px;
-    text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
-}
-
-/* About Section */
-.about {
-    padding: 50px;
-    background: white;
-}
-
-/* Login Box */
-.login-box {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-box input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.login-box button {
-    background: #0077b6;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.signup-text a {
-    color: #0077b6;
-}
-
-/* Footer */
-footer {
-    background: #0077b6;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: white;
-    margin: 0 10px;
     text-decoration: none;
+    font-size: 18px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #0077b6;
-        position: absolute;
-        width: 100%;
-        top: 60px;
-        left: 0;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .nav-links li {
-        text-align: center;
-        padding: 10px;
-    }
+.donate-btn:hover {
+    background: #cc0000;
 }
