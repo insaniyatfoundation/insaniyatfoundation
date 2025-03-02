@@ -1,302 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insaniyat Foundation</title>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insaniyat Foundation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-    </style>
 </head>
 <body>
-    <h1>Welcome to Insaniyat Foundation</h1>
-    <p>Making the world a better place through kindness and charity.</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insaniyat Foundation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .navbar {
-            background-color: #2c3e50;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar .menu {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar .menu li {
-            display: inline;
-        }
-        .navbar .menu li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-        }
-        .footer .social-icons {
-            margin: 10px 0;
-        }
-        .footer .social-icons a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-    </style>
-</head>
-<body>
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">Insaniyat Foundation</div>
-        <ul class="menu">
+        <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Login/Signup</a></li>
+            <li><a href="#">Login/Sign Up</a></li>
         </ul>
     </nav>
-    
-    <footer class="footer">
-        <p>&copy; 2025 Insaniyat Foundation. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insaniyat Foundation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .navbar {
-            background-color: #2c3e50;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar .menu {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar .menu li {
-            display: inline;
-        }
-        .navbar .menu li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .menu-toggle {
-            display: none;
-            cursor: pointer;
-            font-size: 24px;
-        }
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            width: 100%;
-            text-align: center;
-            margin-top: auto;
-        }
-        .footer .social-icons {
-            margin: 10px 0;
-        }
-        .footer .social-icons a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        @media (max-width: 768px) {
-            .navbar .menu {
-                display: none;
-                flex-direction: column;
-                background-color: #2c3e50;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                text-align: center;
-            }
-            .navbar .menu.active {
-                display: flex;
-            }
-            .menu-toggle {
-                display: block;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">Insaniyat Foundation</div>
-        <span class="menu-toggle">☰</span>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="login.html">Login/Signup</a></li>
-        </ul>
-    </nav>
-    
-    <h1>Welcome to Insaniyat Foundation</h1>
-    <p>Making the world a better place through kindness and charity.</p>
-    
-    <footer class="footer">
-        <p>&copy; 2025 Insaniyat Foundation. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-    
-    <script>
-        document.querySelector(".menu-toggle").addEventListener("click", function() {
-            document.querySelector(".menu").classList.toggle("active");
-        });
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Insaniyat Foundation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            width: 100%;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #1a252f;
-        }
-        .switch {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
+
+    <!-- Main Section -->
     <div class="container">
-        <h2>Login</h2>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <div class="switch">
-            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <h2>Welcome to Insaniyat Foundation</h2>
+        <p>Making the world a better place through kindness and charity.</p>
+
+        <div class="login-box">
+            <h3>Login</h3>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <p class="signup-text">Don't have an account? <a href="#">Sign Up</a></p>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 Insaniyat Foundation. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
-<div class="container">
-    <div class="login-box">
-        <h2>Login</h2>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <button>Login</button>
-    </div>
-</div>
-
-
