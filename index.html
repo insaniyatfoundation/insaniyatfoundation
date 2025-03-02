@@ -5,23 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insaniyat Foundation</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #1d3557;
+            padding: 15px 20px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo-container span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 10px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('Images/banner.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 50px;
+        }
+        .btn {
+            background: #e63946;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .content, .login-section {
+            background: white;
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .login-section input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .login-section button {
+            background: #457b9d;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        footer {
+            background: #1d3557;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo-container">
             <img src="Images/logo.png" alt="Insaniyat Foundation Logo">
-            <span class="logo-text">Insaniyat Foundation</span>
+            <span>Insaniyat Foundation</span>
         </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login/Sign Up</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login/Sign Up</a></li>
         </ul>
     </nav>
 
@@ -29,41 +117,32 @@
     <header class="hero">
         <h1>Bringing Kindness & Charity Together</h1>
         <p>Your small help can change a life. Join us today!</p>
-        <a href="#" class="btn">Donate Now</a>
+        <a href="#donate" class="btn">Donate Now</a>
     </header>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="content">
         <h2>About Us</h2>
         <p>Insaniyat Foundation is dedicated to helping underprivileged communities by providing food, education, and medical assistance.</p>
     </section>
 
-    <!-- Login Box -->
-    <div class="login-box">
-        <h3>Login</h3>
+    <!-- Login Section -->
+    <section id="login" class="login-section">
+        <h2>Login</h2>
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password">
         <button>Login</button>
-        <p class="signup-text">Don't have an account? <a href="#">Sign Up</a></p>
-    </div>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Insaniyat Foundation. All rights reserved.</p>
+        <p>&copy; 2025 Insaniyat Foundation. All rights reserved.</p>
         <div class="social-links">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
     </footer>
-
-    <!-- JavaScript for Mobile Navbar -->
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".nav-links");
-            menu.classList.toggle("active");
-        }
-    </script>
-
 </body>
 </html>
