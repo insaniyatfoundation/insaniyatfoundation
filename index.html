@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">Insaniyat Foundation</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -43,5 +45,14 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Navbar -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active");
+        }
+    </script>
+
 </body>
 </html>
