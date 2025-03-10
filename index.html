@@ -11,14 +11,19 @@
             font-family: Arial, sans-serif;
             color: white;
         }
+
         .hero-section {
             position: relative;
             text-align: center;
             padding: 80px 20px;
-            background: url('Images/dark-theme-banner.jpg') no-repeat center center/cover;
+            background: url('Images/hand-shake-logo.png') no-repeat center center/cover;
             color: white;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align logo to the left */
         }
+
         .hero-section::before {
             content: "";
             position: absolute;
@@ -28,14 +33,19 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.7);
         }
+
         .hero-content {
             position: relative;
             z-index: 1;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            padding-left: 100px; /* Increase space between logo and text */
         }
+
         .logo {
-            max-width: 60px;
+            max-width: 120px; /* Increase logo size */
+            margin-right: 30px; /* Space between logo and text */
         }
+
         .footer {
             text-align: center;
             padding: 15px;
@@ -43,6 +53,7 @@
             color: white;
             margin-top: 30px;
         }
+
         .section-box {
             background: #333;
             padding: 40px;
@@ -51,12 +62,14 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
         }
+
         .poor-people-section {
             background: #550000;
             position: relative;
             padding: 60px 20px;
             color: white;
         }
+
         .poor-people-section::before {
             content: "";
             position: absolute;
@@ -64,16 +77,19 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('Images/hand shake logo.png') no-repeat center center/cover;
+            background: url('Images/hand-shake-logo.png') no-repeat center center/cover;
             opacity: 0.3;
         }
+
         .poor-people-content {
             position: relative;
             z-index: 1;
         }
+
         .events-section {
             background: #112233;
         }
+
         .donate-btn {
             background: #ff3333;
             color: white;
@@ -82,6 +98,7 @@
             text-decoration: none;
             font-size: 18px;
         }
+
         .donate-btn:hover {
             background: #cc0000;
         }
