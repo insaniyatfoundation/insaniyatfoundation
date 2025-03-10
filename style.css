@@ -11,6 +11,9 @@ body {
     background: url('Images/hand-shake-logo.png') no-repeat center center/cover;
     color: white;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
 }
 
 .hero-section::before {
@@ -27,10 +30,12 @@ body {
     position: relative;
     z-index: 1;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    padding-left: 100px; /* Increase space between logo and text */
 }
 
 .logo {
-    max-width: 60px;
+    max-width: 120px; /* Increase logo size */
+    margin-right: 30px; /* Space between logo and text */
 }
 
 .footer {
