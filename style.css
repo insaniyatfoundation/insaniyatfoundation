@@ -1,45 +1,16 @@
-/* General Styles */
 body {
     background-color: #1a1a1a;
     font-family: Arial, sans-serif;
     color: white;
-    margin: 0;
-    padding: 0;
 }
 
-/* Navbar Styles */
-.navbar {
-    padding: 10px 0;
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-/* Hero Section Styles */
 .hero-section {
     position: relative;
     text-align: center;
     padding: 80px 20px;
-    background: url('Images/hand-shake-logo.png') no-repeat center center/cover;
+    background: url('Images/handshake-logo.png') no-repeat center center/cover;
     color: white;
     font-weight: bold;
-}
-
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -48,57 +19,68 @@ body {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
+.logo {
+    max-width: 60px;
 }
 
 .donate-btn {
     background: #ff3333;
     color: white;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 18px;
 }
 
 .donate-btn:hover {
     background: #cc0000;
 }
 
-/* Google Payment Section Styles */
-.google-payment {
+.google-scanner {
     display: none;
+    background-color: #fff;
     padding: 30px;
-    background-color: #f1f1f1;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.scanner-img {
-    width: 150px;
-    height: auto;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    margin-top: 20px;
+    z-index: 9999;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 60px 20px;
-    }
+#scannerImg {
+    max-width: 100%;
+    border-radius: 5px;
+}
 
-    h1 {
-        font-size: 28px;
-    }
+.close-btn {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
 
-    .donate-btn {
-        font-size: 18px;
-        padding: 10px 20px;
-    }
+.close-btn:hover {
+    background-color: #cc0000;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+}
+
+.section-box {
+    background: #333;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
