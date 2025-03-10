@@ -13,3 +13,4 @@ document.getElementById('closeScanner').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+// JavaScript for any dynamic interactions, if required (for example, smooth scrolling)
