@@ -3,73 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insaniyat Foundation</title>
+    <title>Insaniyat NGO Foundation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Insaniyat Foundation</a>
+            <a class="navbar-brand" href="#">
+                <img src="Images/logo.png" alt="Insaniyat Logo" class="logo"> Insaniyat NGO Foundation
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#volunteers">Volunteers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login/Sign Up</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <div class="hero-section">
         <div class="hero-content">
-            <h1>Changing Lives Together</h1>
-            <p>Your support makes a difference. Join us today!</p>
-            <a href="#donate" class="btn btn-primary">Donate Now</a>
+            <h1>Bringing Kindness & Charity Together</h1>
+            <p>Your small help can change a life. Join us today!</p>
+            <button id="donateBtn" class="donate-btn">Donate Now</button>
         </div>
-    </section>
+    </div>
 
-    <!-- Impact Stats Section -->
-    <section id="stats" class="stats-section text-center">
-        <div class="container">
-            <h2>Our Impact</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>1000+</h3>
-                    <p>Meals Served Daily</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>500+</h3>
-                    <p>Volunteers Across the Country</p>
-                </div>
-                <div class="col-md-4">
-                    <h3>50+</h3>
-                    <p>Projects to Help Communities</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="google-payment" class="google-payment">
+        <h3>Google Payment</h3>
+        <p>Scan to donate!</p>
+        <img src="Images/gpscanner.png" alt="Google Scanner" class="scanner-img">
+    </div>
 
-    <!-- Volunteer Section -->
-    <section id="volunteers" class="volunteer-section bg-light">
-        <div class="container text-center">
-            <h2>Join Our Volunteer Force</h2>
-            <p>Become a part of the mission to uplift those in need.</p>
-            <a href="#contact" class="btn btn-secondary">Contact Us to Volunteer</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <p>&copy; 2025 Insaniyat Foundation | All Rights Reserved</p>
-    </footer>
-
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
