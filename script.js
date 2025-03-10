@@ -1,4 +1,15 @@
 document.getElementById('donateBtn').addEventListener('click', function() {
-    document.getElementById('google-payment').scrollIntoView({ behavior: 'smooth' });
-    document.getElementById('google-payment').style.display = 'block';
+    document.getElementById('googleScanner').style.display = 'block';
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+    });
+});
+
+document.getElementById('closeScanner').addEventListener('click', function() {
+    document.getElementById('googleScanner').style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
