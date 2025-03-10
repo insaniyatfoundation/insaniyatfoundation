@@ -1,9 +1,28 @@
+/* General Styles */
 body {
     background-color: #1a1a1a;
     font-family: Arial, sans-serif;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar Styles */
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Hero Section Styles */
 .hero-section {
     position: relative;
     text-align: center;
@@ -20,7 +39,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -29,13 +48,22 @@ body {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
 .donate-btn {
     background: #ff3333;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -43,6 +71,7 @@ body {
     background: #cc0000;
 }
 
+/* Google Payment Section Styles */
 .google-payment {
     display: none;
     padding: 30px;
@@ -52,7 +81,24 @@ body {
 }
 
 .scanner-img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .donate-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }
