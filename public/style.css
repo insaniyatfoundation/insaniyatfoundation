@@ -1,91 +1,37 @@
 body {
-    background-color: #1a1a1a;
     font-family: Arial, sans-serif;
-    color: white;
-}
-
-.hero-section {
-    position: relative;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 80px 20px;
-    background: url('Images/hand\ shake\ logo.png') no-repeat center center/cover;
-    color: white;
-    font-weight: bold;
+    background: #f4f4f4;
 }
 
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-}
-
-.logo {
-    max-width: 60px;
-}
-
-.footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #222;
-    color: white;
-    margin-top: 30px;
-}
-
-.section-box {
+header {
     background: #333;
-    padding: 40px;
-    text-align: center;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.poor-people-section {
-    background: #550000;
-    position: relative;
-    padding: 60px 20px;
     color: white;
+    padding: 20px;
 }
 
-.poor-people-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+header img {
+    width: 100px;
+    height: auto;
+}
+
+.hero {
+    background: url('./Images/hand-shake-logo.png') no-repeat center center/cover;
+    color: white;
+    padding: 50px;
+}
+
+.about {
+    margin: 20px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background: url('Images/hand\ shake\ logo.png') no-repeat center center/cover;
-    opacity: 0.3;
-}
-
-.poor-people-content {
-    position: relative;
-    z-index: 1;
-}
-
-.events-section {
-    background: #112233;
-}
-
-.donate-btn {
-    background: #ff3333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.donate-btn:hover {
-    background: #cc0000;
 }
