@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -29,6 +29,11 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
 }
 
 section {
@@ -43,6 +48,7 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 button:hover {
@@ -61,6 +67,21 @@ form input, form textarea {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
 
 footer {
