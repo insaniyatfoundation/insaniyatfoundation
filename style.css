@@ -2,15 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333;
+    background-color: #000;
+    color: #fff;
 }
 
 header {
-    background-color: #007bff;
+    background-color: #b30000;
     color: white;
     padding: 15px;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -18,7 +20,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #0056b3;
+    background-color: #800000;
+    padding: 10px 0;
 }
 
 nav ul li {
@@ -30,29 +33,32 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffcc00;
 }
 
 section {
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #800000;
 }
 
 button {
-    background-color: #28a745;
+    background-color: #b30000;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background 0.3s;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #ff0000;
 }
 
 form {
@@ -64,30 +70,64 @@ form {
 form input, form textarea {
     width: 80%;
     max-width: 400px;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #ffcc00;
     border-radius: 5px;
+    background-color: #222;
+    color: white;
 }
 
 form button {
-    background-color: #007bff;
+    background-color: #b30000;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: 18px;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #ff0000;
 }
 
 footer {
-    background-color: #343a40;
+    background-color: #800000;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* About Us Section */
+#about {
+    background-color: #111;
+    padding: 30px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Ramadan Special Section */
+#ramadan-special {
+    background-color: #b30000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#ramadan-special h2 {
+    font-size: 28px;
+}
+
+#ramadan-special p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
 }
