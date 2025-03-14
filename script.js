@@ -59,3 +59,10 @@ function showScanner() {
 function hideScanner() {
     document.getElementById("qr-popup").style.display = "none";
 }
+function showScanner() {
+    document.getElementById("qr-popup").style.display = "flex";
+}
+
+function hideScanner() {
+    document.getElementById("qr-popup").style.display = "none";
+}
