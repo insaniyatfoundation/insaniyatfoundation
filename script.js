@@ -52,3 +52,10 @@ function changeImage() {
 }
 
 setInterval(changeImage, 3000);
+function showScanner() {
+    document.getElementById("qr-popup").style.display = "block";
+}
+
+function hideScanner() {
+    document.getElementById("qr-popup").style.display = "none";
+}
