@@ -7,83 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <img src="Images/logo.png" alt="Insaniyat NGO Foundation Logo" class="logo">
+        <h1>INSANIYAT NGO FOUNDATION</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#ramadan-special">Ramadan Special</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We distribute food to 1000 needy people daily, provide groceries, medical aid, education support, and help with mosque & cemetery maintenance.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Food Distribution</li>
+            <li>Medical Assistance</li>
+            <li>Education Support</li>
+            <li>Marriage & Burial Support</li>
+        </ul>
+    </section>
+    
+    <section id="ramadan-special">
+        <h2>Ramadan Special</h2>
+        <p>During Ramadan, we arrange special food drives and donations for the needy.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-    <!-- Popup Form -->
-    <div id="popup" class="popup">
+    <!-- Donate Section -->
+    <section id="donate">
+        <h2>Support Us</h2>
+        <p>Your donation helps us serve 1000 people daily.</p>
+        <button class="donate-btn" onclick="showScanner()">Donate Now</button>
+    </section>
+
+    <!-- Hidden QR Code Popup -->
+    <div id="qr-popup" class="popup">
         <div class="popup-content">
-            <h2>Welcome!</h2>
-            <p>Please enter your details to continue.</p>
-            <input type="text" id="popup-name" placeholder="Your Name" required>
-            <input type="email" id="popup-email" placeholder="Your Email" required>
-            <button id="submitPopup">Submit</button>
+            <span class="close-btn" onclick="hideScanner()">&times;</span>
+            <h3>Scan to Donate via Google Pay</h3>
+            <img src="Images/gpscanner.png" alt="Google Pay Scanner" class="gpay-scanner">
         </div>
     </div>
 
-    <!-- Main Content (Hidden Initially) -->
-    <div id="main-content" class="hidden">
-        <header>
-            <img src="Images/logo.png" alt="Insaniyat NGO Foundation Logo" class="logo">
-            <h1>INSANIYAT NGO FOUNDATION</h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#ramadan-special">Ramadan Special</a></li>
-            </ul>
-        </nav>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We distribute food to 1000 needy people daily, provide groceries, medical aid, education support, and help with mosque & cemetery maintenance.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Food Distribution</li>
-                <li>Medical Assistance</li>
-                <li>Education Support</li>
-                <li>Marriage & Burial Support</li>
-            </ul>
-        </section>
-
-        <section id="ramadan-special">
-            <h2>Ramadan Special</h2>
-            <p>During Ramadan, we arrange special food drives and donations for the needy.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <section id="donate">
-            <h2>Support Us</h2>
-            <p>Your donation helps us serve 1000 people daily.</p>
-            <button class="donate-btn" onclick="showScanner()">Donate Now</button>
-        </section>
-
-        <div id="qr-popup" class="popup">
-            <div class="popup-content">
-                <span class="close-btn" onclick="hideScanner()">&times;</span>
-                <h3>Scan to Donate via Google Pay</h3>
-                <img src="Images/gpscanner.png" alt="Google Pay Scanner" class="gpay-scanner">
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2025 Insaniyat Foundation. All Rights Reserved.</p>
-        </footer>
-    </div>
-
+    <footer>
+        <p>&copy; 2025 Insaniyat Foundation. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
