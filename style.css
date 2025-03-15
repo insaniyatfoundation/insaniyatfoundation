@@ -38,7 +38,8 @@ nav ul li a {
 section {
     padding: 20px;
     background: white;
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -74,10 +75,18 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 300px;
 }
 
 .close-btn {
     font-size: 20px;
     cursor: pointer;
     float: right;
+}
+
+.gpay-scanner {
+    width: 150px; /* Chhoti size ke liye */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
 }
