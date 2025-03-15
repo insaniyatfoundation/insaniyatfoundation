@@ -1,34 +1,92 @@
-document.addEventListener("DOMContentLoaded", function() {
-    emailjs.init("Ir86_eqa03bO-GmsH"); // Tumhara EmailJS Public Key
-
-    document.getElementById("contact-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        let name = document.getElementById("name").value;
-        let email = document.getElementById("email").value;
-        let message = document.getElementById("message").value;
-
-        let templateParams = {
-            from_name: name,
-            from_email: email,
-            message: message
-        };
-
-        emailjs.send("service_7l3883f", "template_6dhgboi", templateParams)
-            .then(response => {
-                alert("✅ Message Sent Successfully!");
-                document.getElementById("contact-form").reset(); // Reset Form
-            }, error => {
-                alert("❌ Failed to Send Message. Try Again!");
-            });
-    });
-});
-
-// QR Code Popup Functions
-function showScanner() {
-    document.getElementById("qr-popup").style.display = "flex";
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-function hideScanner() {
-    document.getElementById("qr-popup").style.display = "none";
+header {
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #00796B;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #00796B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004D40;
+}
+
+/* QR Code Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.gpay-scanner {
+    width: 150px; /* Chhoti size ke liye */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
 }
