@@ -1,57 +1,30 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
+    emailjs.init("Ir86_eqa03bO-GmsH"); // Tumhara EmailJS Public Key
 
-    form.addEventListener("submit", function(event) {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        
-        let name = document.querySelector("input[type='text']").value;
-        let email = document.querySelector("input[type='email']").value;
-        let message = document.querySelector("textarea").value;
 
-        if (name === "" || email === "" || message === "") {
-            alert("Please fill in all fields before submitting.");
-            return;
-        }
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
 
-        alert("Thank you, " + name + "! Your message has been received.");
-        form.reset();
-    });
+        let templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message
+        };
 
-    // Smooth Scroll
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
+        emailjs.send("service_7l3883f", "template_6dhgboi", templateParams)
+            .then(response => {
+                alert("✅ Message Sent Successfully!");
+                document.getElementById("contact-form").reset(); // Reset Form
+            }, error => {
+                alert("❌ Failed to Send Message. Try Again!");
             });
-        });
     });
-
-    // Ramadan Special Toggle (Check if button exists)
-    const toggleRamadanBtn = document.getElementById("toggle-ramadan");
-    if (toggleRamadanBtn) {
-        toggleRamadanBtn.addEventListener("click", function() {
-            const section = document.getElementById("ramadan-special");
-            section.style.display = section.style.display === "none" ? "block" : "none";
-        });
-    }
-
-    // Image Slider for Gallery (Check if image element exists)
-    let index = 0;
-    const images = ["image1.JPG", "image6.JPG", "image7.JPG", "image8.JPG", "image9.JPG"]; // Change with real paths
-    const imgElement = document.getElementById("gallery-img");
-
-    if (imgElement) {
-        function changeImage() {
-            index = (index + 1) % images.length;
-            imgElement.src = images[index];
-        }
-        setInterval(changeImage, 3000);
-    }
 });
 
-// Show/Hide QR Scanner Popup
+// QR Code Popup Functions
 function showScanner() {
     document.getElementById("qr-popup").style.display = "flex";
 }
