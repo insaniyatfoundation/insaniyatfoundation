@@ -54,3 +54,10 @@ body {
 .hidden {
     display: none;
 }
+
+/* Donate Section */
+.gpay-scanner {
+    width: 150px; /* Small size for a professional look */
+    display: block;
+    margin: 10px auto;
+}
